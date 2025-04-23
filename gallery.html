@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>גלריית החניון</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/ParkWiseIconWithOut.png">
+  <style>
+    /* עיצוב לוגו */
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+
+    /* עיצוב לגלריה */
+    .gallery-section {
+      margin-top: 20px;
+    }
+
+    .gallery-img-container {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-img-container:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* עיצוב לסרטונים */
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <!-- כותרת ולוגו -->
+  <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
+    <div class="logo-container">
+      <img src="images/ParkWiseSamalNewFix.png" alt="לוגו האתר" class="logo">
+    </div>
+    <h1 class="text-center flex-grow-1">גלריית החניון שלנו</h1>
+  </header>
+
+  <!-- תפריט ניווט -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="home.html">דף הבית</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">אודות</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">גלריה</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">צור קשר</a></li>
+          <li class="nav-item"><a class="nav-link" href="parking.html">הזמנת חנייה</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">השארת משוב</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">התחברות</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- גלריית תמונות -->
+  <section class="gallery-section container">
+    <div class="row">
+      <div class="col-12 col-md-4 mb-3">
+        <img src="images/Park1.jpg" alt="Parking1" class="gallery-img-container gallery-img">
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <img src="images/Park2.jpg" alt="Parking2" class="gallery-img-container gallery-img">
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <img src="images/Park3.jpg" alt="Parking3" class="gallery-img-container gallery-img">
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <img src="images/Park4.jpg" alt="Parking4" class="gallery-img-container gallery-img">
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <img src="images/Park5.jpg" alt="Parking5" class="gallery-img-container gallery-img">
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <img src="images/Park6.jpg" alt="Parking6" class="gallery-img-container gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- סרטונים -->
+  <section class="video-container">
+    <video controls>
+      <source src="videos/Vid1.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="videos/Vid2.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="videos/Vid3.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- כותרת תחתונה -->
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+    <p>כל הזכויות שמורות לליאור ודוד Ⓒ</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-database-compat.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

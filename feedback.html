@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>השארת משוב</title>
+    <link rel="title icon" type="image/png" href="images/camera-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/ParkWiseIconWithOut.png"> 
+    <style>
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
+        <div class="logo-container">
+            <img src="images/ParkWiseSamalNewFix.png" alt="לוגו האתר" class="logo">
+        </div>
+        <h1 class="text-center flex-grow-1">השארת משוב</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html">דף הבית</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">אודות</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">גלריה</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">צור קשר</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parking.html">הזמנת חנייה</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">השארת משוב</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">התחברות</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="form-container">
+        <h2>השארת משוב</h2>
+        <form id="feedback-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">שם:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">אימייל:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+           
+        </form>
+        <div class="question-container mb-3">
+            <label>בבקשה דרג מ־1 עד 5 כמה היה נוח הכניסה והיציאה לחניון</label>
+            <div class="radio-options">
+                <div><input type="radio" name="question1" value="1"> 1. לא נוח בכלל</div>
+                <div><input type="radio" name="question1" value="2"> 2. לא נוח</div>
+                <div><input type="radio" name="question1" value="3"> 3. נוח</div>
+                <div><input type="radio" name="question1" value="4"> 4. נוח מאוד</div>
+                <div><input type="radio" name="question1" value="5"> 5. נוח לחלוטין</div>
+            </div>
+        </div>
+        <div class="question-container mb-3">
+            <label>בבקשה דרג מ־1 עד 5 כמה קל היה לחפש חנייה בעזרתנו</label>
+            <div class="radio-options">
+                <div><input type="radio" name="question2" value="1"> 1. לא קל בכלל</div>
+                <div><input type="radio" name="question2" value="2"> 2. לא קל</div>
+                <div><input type="radio" name="question2" value="3"> 3. קל</div>
+                <div><input type="radio" name="question2" value="4"> 4. קל מאוד</div>
+                <div><input type="radio" name="question2" value="5"> 5. קל לחלוטין</div>
+            </div>
+        </div>
+        <div class="checkbox-options mb-3">
+            <label>בבקשה תבחר מה אנחנו צריכים לשפר (ניתן לבחור יותר מתשובה אחת)</label>
+            <div><input type="checkbox" id="one" name="rating" value="one"> <label for="one">נוחות מציאת חנייה</label></div>
+            <div><input type="checkbox" id="two" name="rating" value="two"> <label for="two">שירות</label></div>
+            <div><input type="checkbox" id="three" name="rating" value="three"> <label for="three">גודל החניון</label></div>
+            <div><input type="checkbox" id="four" name="rating" value="four"> <label for="four">אינני חושב שיש מה לשפר</label></div>
+        </div>
+        <div class="mb-3">
+            <label for="message">אנא ספר לנו עוד דברים שברצונך להוסיף</label>
+            <textarea id="message" name="message" class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit">שלח</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-database-compat.js"></script>
+    <script src="index.js"></script>
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            console.log("שם:", document.getElementById('name').value);
+            console.log("אימייל:", document.getElementById('email').value);
+            alert("תודה על המשוב!");
+            this.reset(); 
+        });
+    </script>
+</body>
+</html>

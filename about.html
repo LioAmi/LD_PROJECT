@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/ParkWiseIconWithOut.png"> 
+    <style>
+        
+    </style>
+</head>
+<body class="bg-light">
+    <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
+        <div class="logo-container">
+            <img src="images/ParkWiseSamalNewFix.png" alt="לוגו האתר" class="logo">
+        </div>
+        <h1 class="text-center flex-grow-1">אודות החניון</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html">דף הבית</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">אודות</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">גלריה</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">צור קשר</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parking.html">הזמנת חנייה</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">השארת משוב</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">התחברות</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-4">
+        <section>
+            <div class="section bg-white p-4 mb-4 shadow-sm rounded">
+                <h2 class="text-center">מידע כללי על הפרויקט</h2>
+                <p>הפרויקט "חניון חכם" נועד לשפר את חוויית החנייה באמצעות טכנולוגיות מתקדמות מתחום ה-IoT. בעזרת המערכת, משתמשים יכולים למצוא, להזמין ולתפוס מקומות חנייה באופן נוח וידידותי, תוך קבלת חיווי בזמן אמת על זמינות חניות. המערכת נבנתה מתוך רצון להקל על הנהגים, לצמצם את זמן החיפוש לחנייה פנויה ולמנוע את העומס באזורים הצפופים של החניון.</p>
+            </div>
+            <div class="section bg-white p-4 mb-4 shadow-sm rounded">
+                <h3 class="text-center">תכונות המערכת</h3>
+                <ul class="list-unstyled">
+                    <li>מפה אינטראקטיבית של החניון - מאפשרת למשתמשים לצפות במצב החניות ולהזמין מקום פנוי ישירות מהמפה.</li>
+                    <li>חיווי חנייה חכמה - נורות WS2812 LED שמציינות בזמן אמת האם החנייה תפוסה או פנויה.
+                    </li>
+                    <li>גלאי IR אוטומטי - משתמש בגלאי TSOP4838 כדי לזהות יציאת רכב מהחנייה ולשחרר אותה באופן אוטומטי.</li>
+                    <li>אפשרות להזמנה מראש - מאפשרת למשתמשים לשריין מקום חנייה לפי תאריך ושעה.
+                    </li>
+                    <li>דיווחי זמינות - המערכת מציגה עדכון שוטף של סטטוס כל חנייה, ומעדכנת את המפה בהתאם למצב בפועל.
+                    </li>
+                </ul>
+            </div>
+            <div class="section bg-white p-4 mb-4 shadow-sm rounded">
+                <h4 class="text-center">חזון שלנו לעתיד:</h4>
+                <p>החזון שלנו הוא להפוך את חוויית החנייה לחכמה ויעילה יותר, לא רק במגרשי חנייה אלא גם בשטחים עירוניים ובחניונים פרטיים. בעתיד, נרצה להרחיב את המערכת כך שתוכל להתחבר למערכות נוספות של ערים חכמות, ולהוסיף תכונות נוספות כגון:
+
+                    זיהוי לוחיות רישוי - כדי לאמת את זהות הרכב ולהגביר את אבטחת החנייה.
+                    התראות בזמן אמת - שליחת הודעות לנייד כאשר מתפנה מקום חנייה.
+                    שיפור הממשק - לשפר את הממשק כך שיהיה ידידותי ומהיר יותר לשימוש.
+                    מערכת החניון החכם תמשיך להשתדרג ולצמוח כדי להעניק למשתמשים חוויית חנייה מהירה, נוחה ובטוחה יותר.</p>
+            </div>
+            <div class="section bg-white p-4 shadow-sm rounded">
+                <h5 class="text-center">הצוות שלנו</h5>
+                <div class="row text-center">
+                    <div class="col-md-6 mb-3">
+                        <img class="about-img img-fluid rounded" src="images/david.png">
+                        <p>דוד צארווץ' – אחראי על עיצוב ופיתוח ממשקי המשתמש והחוויה הכוללת. דוד מביא ניסיון מעולם ה-UI/UX, ועובד כדי להבטיח שהמערכת תהיה נגישה, אינטואיטיבית וידידותית למשתמש.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <img class="about-img img-fluid rounded" src="images/lior.png">
+                        <p>ליאור עמית – אחראי על תחום הפיתוח הטכנולוגי והאלגוריתמים של המערכת. לליאור ניסיון עשיר בתחום האלקטרוניקה והתוכנה, והוא מוביל את הפן הטכנולוגי של הפרויקט עם ידע ב-IoT ובפיתוח מערכות חכמות.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>כל הזכויות שמורות לליאור ודוד Ⓒ</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-database-compat.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
